@@ -18,19 +18,18 @@ class Carro extends Automovel{
     exibirDetalhes(){
         return `${super.exibirDetalhes()}, Portas:${this.portas}`;
     }
-}
+} 
 
 class Moto extends Automovel{
-    constructor(marca,modelo, ano, cilindrada){
-        super(marca,modelo, ano);
-        this.cilindrada = cilindrada;
+    constructor(marca, modelo, ano, cilindrada){
+        super(marca, modelo, ano);
+        this.cilindrada = cilindrada
     }
     exibirDetalhes(){
-        return`${super.exibirDetalhes()}, Cilindrada:${this.cilindrada}`;
+         return `${super.exibirDetalhes()}, Portas:${this.cilindrada}`;
     }
-}
+} 
 
 let moto1 = new Moto(" Kawasaki", "Ninja H2", 2015, 998 );
 console.log(moto1.exibirDetalhes());
-let carro1 = new Carro ("Nissan", "GT-R NISMO", 2024, 2);
-console.log(carro1.)
+let carro1 = new Carro ("Bugatti La Voiture Noire", "GT-R NISMO", 2024, 2);
